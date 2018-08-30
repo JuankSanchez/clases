@@ -1,0 +1,318 @@
+<!-- COMENTARIO HTML (no es interpretado por el navegado) --> 
+<!DOCTYPE html> <!-- INDICA la versi'on del lenguaje de marcado a aplicar --> 
+<html lang="es"> 
+    <head>
+        <title>CSS</title>
+        <meta charset="UTF-8">
+		<style>
+
+			/* COMENTARIOS CSS */
+
+			/* selectores: es la forma de obtener un conjunto de etiquetas HTML para aplicar uno o multiples diseños en forma de cascada */
+
+			/* 1 - TODAS LAS ETIQUETAS */
+			* { } 
+
+			/* 1 - UNA ETIQUETA */
+			body {
+				background-color: #fefeeb;
+			}
+
+			h1 {
+				color: white;
+			}
+
+			p {
+				font-family: verdana;
+				font-size: 20px;
+			}
+
+			/* 2 - ETIQUETAS HIJAS - DESCENDENTES */
+			p font {
+				font-family: verdana;
+				font-size: 20px;
+				color: green;
+			}
+
+			/* 3 - Selecto de CLASE */
+			p.dotted {border-style: dotted;}
+			p.dashed {border-style: dashed;}
+			p.solid {border-style: solid;}
+			p.double {border-style: double;}
+			p.groove {border-style: groove;}
+			p.ridge {border-style: ridge;}
+			p.inset {border-style: inset;}
+			p.outset {border-style: outset;}
+			p.none {border-style: none;}
+			p.hidden {border-style: hidden;}
+			p.mix {border-style: dotted dashed solid double;}
+
+			div.contenedor {
+				height: 200px;
+				width: 50%;
+				background-color: powderblue;
+			}
+
+			/* 4 - SELECTOR POR ID */
+			h2#TABLAS { color: blue; }
+
+
+			/* 5 - SELECTOR POR ATRIBUTO*/
+			h2[id="INTERES"]{ color: red; }
+
+
+		</style>
+		<link rel="stylesheet" href="css/tabla.css">
+    </head>
+
+    <body>
+
+        <div style="position:fixed;top:20px;right:50px">
+            <img src="./imagenes/css.png" width="120px" alt>
+        </div>       
+        
+        <div>
+            <ul>
+				<li><a href="index.html">Volver</a></li><br>
+                <li><a href="#CSS">CSS aplicado sobre HTML (<A href="html.html">clases HTML</a>) </a>
+                    <ul>
+                        <br>
+                        <li><a href="#CONCEPTOS">Conceptos IMPORTANTES</a></li>
+						<li><a href="#PARAFOS">Parrafos y colores</a></li>
+                        <li><a href="#LISTAS">Listas</a></li>
+                        <li><a href="#LINKS">Links</a></li>
+                        <li><a href="#CARACTERES">Caracteres</a></li>
+                        <li><a href="#TABLAS">Tablas</a></li>
+                        <li><a href="#FORMULARIO">Formlario</a></li>
+                        <li><a href="#MULTIMEDIA">Multimedia</a></li>
+                        <li><a href="#ESTRUCTURA">Estructura</a></li>
+                        <br>
+                    </ul>
+                </li><br>
+                <li><a href="#CSS">CSS</a>
+                    <ul>
+                        <br>
+                        <li><a href="medidas.css.html">Medidas y colores</a></li>
+                        <li><a href="margenes.css.html">Margenes</a></li>
+						<li><a href="padding.css.html">Padding - relleno</a></li>
+                        <li><a href="flotante.css.html">Flotante y display</a></li>
+                        <li><a href="modelocaja.css.html">Modelo caja</a></li>
+                        <li><a href="posisiones.css.html">Posisiones</a></li>
+                        <li><a href="animacion.css.html">Animaciones</a></li>
+                        <br>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <br><br>
+        
+        <h1 style="color:blue;" id="CSS">CSS</h1> 
+
+		<p>CSS: sigla en inglés Cascading Style Sheets (es decir, hojas de estilo en cascada).</p>
+        
+        <p>Conceptos <u>IMPORTANTES</u></p>
+                
+        <ul>
+            <li>SELECTORES: manera de referirnos a las etiquetas del HTML.</li>
+            <li>MODELADO DE CAJA: Diseñamos pensando en capas.</li>
+
+        </ul>
+        
+		<etiqueta atributo="soy un atributo">SOY UNA ETIQUETA</etiqueta>
+
+		<hr>
+        
+		<h2 id="PARRAFOS">Parrafos, Titulos y colores</h2>
+
+		<p class="dotted" style="color:red;"><font color="blue">DESARROLLO WEB FULL STACK</font>. Fórmate en un programa presencial blended intensivo en espacios reales de tecnología para acelerar tu éxito, <b>certificado</b> por las empresas líderes de la industria.</p>
+		<p class="double" style="color:blue;"><font color="blue">DESARROLLO WEB FULL STACK</font>. Fórmate en un programa presencial blended intensivo en espacios reales de tecnología para acelerar tu éxito, <b>certificado</b> por las empresas líderes de la industria.</p>
+		<p class="mix" style="font-size:50px;"><font color="blue">DESARROLLO WEB FULL STACK</font>. Fórmate en un programa presencial blended intensivo en espacios reales de tecnología para acelerar tu éxito, <b>certificado</b> por las empresas líderes de la industria.</p>
+
+		<h1>Título 1</h1>
+		<h2>Título 2</h2>
+		<h3>Título 3</h3>
+		<h4>Título 4</h4>
+		<h5>Título 5</h5>
+		<h6>Título 6</h6>
+        
+		<hr>
+
+		<h2 id="LISTAS">LISTAS</h2>
+	
+		<ul style='list-style-type: circle'>
+		  <li>Item 0</li>
+		  <li>Item 1</li>
+		  <li>Item 2</li>
+		</ul>
+
+		<ul type="i">
+		  <li>Item 0</li>
+		  <li>Item 1</li>
+		  <li>Item 2</li>
+		</ul>
+
+
+		<table border="1"><tbody>
+		<tr>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>type="1"</td>
+			<td>enumerada por defecto</td>
+		</tr>
+		<tr>
+			<td>type="A"</td>
+			<td>enumerada con el abecedario en MAYUSCULA</td>
+		</tr>
+		<tr>
+			<td>type="a"</td>
+			<td>enumerada con el abecedario en MINUSCULA</td>
+		</tr>
+		<tr>
+			<td>type="I"</td>
+			<td>enumeracion romana MAYUSCULA</td>
+		</tr>
+		<tr>
+			<td>type="i"</td>
+			<td>enumeracion romana MINUSCULA</td>
+		</tr>
+		</tbody></table>
+
+		<hr>
+
+		<h2 id="TABLAS">TABLAS</h2>
+
+		<table border="1" id='miDisenoTaba'>
+		  <tr>
+			<th>Titulo 0</th>
+			<th>Titulo 1</th> 
+			<th>Titulo 2</th>
+		  </tr>
+		  <tr>
+			<td>celda 1-0</td>
+			<td>celda 1-1</td> 
+			<td>celda 1-2</td>
+		  </tr>
+		  <tr>
+			<td>celda 2-0</td>
+			<td>celda 2-1</td> 
+			<td>celda 2-2</td>
+		  </tr>
+		</table>
+
+		<hr>
+
+		<h2 id="LINKS">LINKS</h2>
+		<a href="https://www.acamica.com/">LINKS</a>
+
+		<hr>
+
+		<h2 id="CARACTERES">CARACTERES</h2>
+
+		<table BORDER="1">
+		<tbody><tr>
+			<th>Caracter</th>
+			<th>Nombre</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>&#8704;</td>
+			<td>&forall;</td>
+			<td>Para todo</td>
+		</tr>
+		<tr>
+			<td>&#169;</td>
+			<td>&copy;</td>
+			<td>Marca registrada</td>
+		</tr>
+		<tr>
+			<td>&#8364;</td>
+			<td>&euro;</td>
+			<td>Euro</td>
+		</tr>
+		</tbody></table>
+
+		<hr>
+
+		<h2 id="FORMULARIO"><a href="formularios.html">FORMULARIOS</a></h2>
+		<form>
+		  Nombre:<br>
+		  <input type="text" value="aca va el nombre">
+		  <br>
+		  Apellido:<br>
+		  <input type="text" value="aca va el apellido">
+		  <br><br>
+			Fecha de nacimiento:<br>
+		  <input type="date">
+		  <br><br>
+		  <input type="submit" value="Enviar">
+		</form> 
+
+		<hr>
+
+
+		<h2 id="MULTIMEDIA">MULTIMEDIA</h2>
+		<!-- SONIDO -->
+		<audio controls>
+		  	<source src="audios/horse.ogg" type="audio/ogg">
+			EL NAVEGADOR NO SOPORTA LA REPRODUCCIÓN.
+		</audio>
+		
+		<br>
+
+		<!-- VIDEO -->
+		<video width="320" height="240" controls>
+		  	<source src="videos/sobrino.mp4" type="video/mp4">
+			EL NAVEGADOR NO SOPORTA LA REPRODUCCIÓN.
+		</video>
+
+		<hr>
+
+		<h2 id="ESTRUCTURA"><a href="layout.html">ESTRUCTURA - layout</a></h2>
+
+		<!-- CONTENEDOR PARA AGRUPAR -->
+		<div class='contenedor'>contenedor para agrupar</div>
+
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Elementos semánticos HTML5" src="imagenes/layout.gif" width="219" height="258">
+					</td>
+					<td>
+						<ul>
+							<li>&lt;encabezado&gt; - Define un encabezado para un documento o una sección</li>
+							<li>&lt;nav&gt; - Define un contenedor para enlaces de navegación</li>
+						  	<li>&lt;sección&gt; - Define una sección en un documento</li>
+						  	<li>&lt;artículo&gt; - Define un artículo autónomo independiente</li>
+						  	<li>&lt;aside&gt; - Define contenido aparte del contenido (como una barra lateral)</li>
+						  	<li>&lt;footer&gt; - Define un pie de página para un documento o una sección</li>
+						  	<li>&lt;detalles&gt; - Define detalles adicionales</li>
+						  	<li>&lt;summary&gt; - Define un encabezado para el elemento &lt;details&gt;</li>
+						</ul>
+					</td>
+				</tr>
+		</tbody></table>
+
+		<h2 id="INTERES">De interes...</h2>
+
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada">CSS (Wikipedia)</a></li>
+            <li><a href="https://www.w3.org/standards/techs/css#w3c_all">Estandar</a></li>
+            <li><a href="https://html-color-codes.info/codigos-de-colores-hexadecimales/">Colores</a></li>
+            <li><a href="https://www.cerotec.net/tabla-colores-web/">Colores para paginas webs</a></li>
+			<li><a href="https://www.w3schools.com/html/html5_new_elements.asp">Más etiquetas</a></li>
+			<li><a href="https://getbootstrap.com/">Bootrap - diseño</a></li>
+			<li><a href="https://materializecss.com/">Materialize - diseño</a></li>
+			<li><a href="https://daneden.github.io/animate.css/">Animaciones</a></li>
+			<li><a href="http://getskeleton.com">Skeleton</a></li>
+		</ul>
+        
+        <br>
+                
+        <br>
+        
+    </body>
+</html>

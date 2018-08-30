@@ -1,0 +1,182 @@
+<!-- 
+
+NOTA
+----
+
+PARA VER LOS EJEMPLOS DE ESTA PAGIN INGRESAR A LA CONSOLA Y LLAMAR A LAS RESPECTIVAS
+FUNCIONES DECLARAS EN parte1.js, parte2.js y parte3.js
+
+-->
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+		<title>JQUERY</title>
+        <meta charset="UTF-8">
+		<!-- INCLUIR librerias de tercero para realizar otras tareas 
+        <script type="text/javascript" src="librerias/prototype.js"></script>
+		-->
+        <script type="text/javascript" src="librerias/Chart.min.js"></script>
+        <script type="text/javascript" src="librerias/jquery-3.3.1.js"></script>
+		<!-- INCLUIR NUESTRO CODIGO DESDE UN ARCHIVO EXTERNO -->
+        <script type="text/javascript" src="js/ejemplos.jquery.js"></script>
+    </head>
+    <body>
+
+        <div style="position:fixed;top:20px;right:50px">
+            <a href="index.html"><img src="./imagenes/jquery.png" width="120px" alt='aprendiendo HTML'></a>
+        </div>       
+
+        <div>
+            <ul>
+				<li><a href="index.html">Volver</a></li><br>
+                <li><a href="#JQUERY">JQUERY</a>
+                    <ul>
+                        <br>
+                        <li><a href="#CONCEPTOS">Conceptos IMPORTANTES</a></li>
+                        <li><a href="#INTERES">De interes</a></li>
+                        <br>
+                    </ul>
+                </li>
+                				
+            </ul>
+        </div>
+
+        <br><br>
+        
+        <h1 id="JQUERY">JQUERY</h1> 
+        
+        <p>OBJETIVO: comprender el concepto de librerias y aplicar jquery.</p>
+        
+        <p>Conceptos <u>IMPORTANTES</u></p>
+        
+        <ul>
+            <li><b>LIBERIA</b>:.</li>
+            <li><b>FUNCION $</b>:.</li>
+        </ul>
+
+
+		<h2 id="idjs">soy un H2 para tulizar con javascript</h2> 
+		<h2 id="idjq">soy un H2 para utilizar con jquery</h2> 
+
+
+        <h3>JQUERY</h3>
+        
+		<p></p>
+
+        <ul>
+            <li></li>
+        </ul>
+
+
+        
+        <h3>PROTOTYPE</h3>
+        
+        <ul>
+            <li>Soporte para ajax</li>
+            <li>Procesamiento de matrices</li>
+            <li>Referencia a elementos y enlace a eventos</li>
+            <li>Implementacion DOM</li>
+            <li>Trabajar con formularios y sus respectivos controles</li>
+            <li>Tratamiento de eventos</li>
+            <li>Posicionamiento de elementos dentro de la pagina</li>
+            <li>Tratamiento de cadenas de caracteres</li>
+        </ul>
+               
+        <h3>GRAFICOS DE BARRAS CON CHART.JS</h3>
+        <div style="width: 50%">
+            <canvas id="idBarras" height="450" width="600"></canvas>
+	</div>
+        
+        <h5>TIPS: GRAFICOS DE LINEAS CON CHART.JS</h1>
+        <div style="width:30%">
+            <div>
+                <canvas id="idLineal" height="450" width="600"></canvas>
+            </div>
+	</dv>
+        
+        <script>
+            
+        // Ejemplo grafico de barra 
+	var funcionRandom = function(){ return Math.round(Math.random()*100)};
+
+	var barChartData = {
+		labels : ["Enero","Febrero","Marzo","Abril","Mayo","Juanio","Julio"],
+		datasets : [
+			{
+                            fillColor : "rgba(220,220,220,0.5)",
+                            strokeColor : "rgba(220,220,220,0.8)",
+                            highlightFill: "rgba(220,220,220,0.75)",
+                            highlightStroke: "rgba(220,220,220,1)",
+                            data : [funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom()]
+			},
+			{
+                            fillColor : "rgba(151,187,205,0.5)",
+                            strokeColor : "rgba(151,187,205,0.8)",
+                            highlightFill : "rgba(151,187,205,0.75)",
+                            highlightStroke : "rgba(151,187,205,1)",
+                            data : [funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom()]
+			}
+		]
+
+	};
+        
+        
+        var lineChartData = {
+            labels : ["January","February","March","April","May","June","July"],
+                datasets : [{
+			label: "Ventas mensuales de aviones",
+			fillColor : "rgba(220,220,220,0.2)",
+			strokeColor : "rgba(220,220,220,1)",
+			pointColor : "rgba(220,220,220,1)",
+			pointStrokeColor : "#fff",
+			pointHighlightFill : "#fff",
+			pointHighlightStroke : "rgba(220,220,220,1)",
+			data : [funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom()]
+			},{
+                        label: "Ventas mensuales de autos",
+			fillColor : "rgba(151,187,205,0.2)",
+			strokeColor : "rgba(151,187,205,1)",
+			pointColor : "rgba(151,187,205,1)",
+			pointStrokeColor : "#fff",
+			pointHighlightFill : "#fff",
+			pointHighlightStroke : "rgba(151,187,205,1)",
+			data : [funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom(),funcionRandom()]
+			}
+			]
+            }
+        
+	window.onload = function(){
+            var ctx = document.getElementById("idBarras").getContext("2d");
+            window.myBar = new Chart(ctx).Bar(barChartData,{responsive:true});
+                
+            ctx = document.getElementById("idLineal").getContext("2d");
+            window.myLine = new Chart(ctx).Line(lineChartData,{responsive:true});
+	}
+	</script>
+        
+        
+        <h2 id="CLASE2.EI">Enlaces de interes</h2>   
+        
+        <ul>
+            <li><a href="http://prototypejs.org/">Prototype</a></li>
+            <li><a href="http://api.prototypejs.org/">API Prototype</a></li>
+            <li><a href="http://www.chartjs.org/">Libreria Grafica</a></li>
+        </ul>
+        
+        <br>
+        
+		
+		<h2 id="INTERES">De interes...</h2>
+
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/HTML">JS (Wikipedia)</a></li>
+			<li><a href="https://fullcalendar.io/">Full Calendar</a></li>
+			<li><a href="https://codecombat.com/">Aprender JS jugando</a></li>
+			<li><a href="https://ckeditor.com/">Editor HTML</a></li>
+			<li><a href="https://d3js.org/">Graficos</a></li>
+		</ul>
+        
+        <br>
+        
+    </body>
+</html>

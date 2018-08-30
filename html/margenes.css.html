@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Margenes CSS</title>
+        <meta charset="UTF-8">
+		<style>
+
+			div#naranja {
+				background-color: orange;
+				margin-top: 100px;
+				margin-bottom: 300px; 
+				margin-right: 350px;
+				margin-left: 80px;
+			}
+
+			/* esto equivale a lo anterior */
+			div#naranja {
+				background-color: orange;
+				/* El primero es el margen superior, el segundo es el margen derecho, el tercero es el margen inferior y el cuarto es el margen izquierdo */
+				margin: 100px 350px 100px 80px;
+			}
+
+			div#amarillo {
+				background-color: yellow;
+				margin-top: -200px;
+				margin-bottom: 100px;
+				margin-right: 350px;
+				margin-left: 80px;
+			}
+
+
+			div#celeste {
+				background-color: aqua;
+				margin-top: 50%;
+				margin-bottom: 10%;
+				margin-right: 50%;
+				margin-left: 10%;
+			}			
+
+		</style>
+
+    </head>
+
+    <body>
+		<a href="./../css.html">Volver</a>
+		<hr>
+		<hr>
+        <div id='naranja'>NARANJA</div>
+		<hr>
+        <div id='amarillo'>AMARILLO</div>
+		<hr>
+       	<div id='celeste'>CELESTE</div>
+    </body>
+</html>

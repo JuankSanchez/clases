@@ -1,0 +1,84 @@
+<!-- 
+
+NOTA
+----
+
+PARA VER LOS EJEMPLOS DE ESTA PAGIN INGRESAR A LA CONSOLA Y LLAMAR A LAS RESPECTIVAS
+FUNCIONES DECLARAS EN parte1.js, parte2.js y parte3.js
+
+-->
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+		<title>JAVASCRIPT</title>
+        <meta charset="UTF-8">
+		<style>
+			.rojo {color:red}
+		</style>
+		<script>
+			// podemos colocar codigo javascript en cualquier parte del documento HTML
+			console.log('HOLA MUNDO');
+		</script> 
+		<!-- PODEMOS INCLUIR NUESTRO CODIGO DESDE UN ARCHIVO EXTERNO -->
+        <script type="text/javascript" src="js/ejemplos.basicos.js"></script>
+		<script type="text/javascript" src="js/ejemplos.eventos.js"></script>
+		<script type="text/javascript" src="js/ejemplos.tad.js"></script>
+		<script type="text/javascript" src="js/ejemplos.objetos.js"></script>
+    </head>
+    <body>
+
+        <div style="position:fixed;top:20px;right:50px">
+            <a href="index.html"><img src="./imagenes/js.png" width="120px" alt='aprendiendo HTML'></a>
+        </div>
+        
+        <div>
+            <ul>
+				<li><a href="index.html">Volver</a></li><br>
+                <li><a href="#JS">Java Script</a>
+                    <ul>
+                        <br>
+                        <li><a href="#CONCEPTOS">Conceptos IMPORTANTES</a></li>
+                        <li><a href="#INTERES">De interes</a></li>
+                        <br>
+                    </ul>
+                </li>
+                				
+            </ul>
+        </div>
+
+        <br><br>
+        
+        <h1 id="JS">JS - JavaScript</h1> 
+        
+        <p>OBJETIVO: comprender el concepto de programacion realizando un primer acercamiento con el lenguaje JS.</p>
+        
+        <p>Conceptos <u>IMPORTANTES</u></p>
+        
+        <ul>
+            <li><b>VARIABLES</b>:.</li>
+            <li><b>OBJETOS</b>:.</li>
+            <li><b>INPUT</b>:.</li>
+        </ul>
+
+
+		<h2 id="idH2">soy un H2 para pruebas</h2> 
+
+		<h3 id="h3b">ARCHIVOS</h3>
+        
+        <input type="file" id="idInput" name="files[]" onchange='objetoArchivo(event)' multiple />
+        
+        		
+		<div id='tabla'></div>
+
+		<h2 id="INTERES">De interes...</h2>
+
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/HTML">JS (Wikipedia)</a></li>
+			<li><a href="https://javascript30.com">Js 30 dias</a></li>
+			<li><a href="http://jsperf.com/">Performancia JS</a></li>
+		</ul>
+        
+        <br>
+        
+    </body>
+</html>

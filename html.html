@@ -1,0 +1,248 @@
+<!-- COMENTARIO HTML (no es interpretado por el navegado) --> 
+<!DOCTYPE html> <!-- INDICA la versi'on del lenguaje de marcado a aplicar --> 
+<html lang="es"> 
+    <head>
+		<!-- Los metadatos HTML son datos sobre el documento HTML (no se muestran, EXCEPTO EL TIULO). --> 
+        <title>TITULO DE LA PAGINA</title>
+        <meta charset="UTF-8"> 	<!-- Codificacion caracteres -->
+		<style></style> 		<!-- Proximas clases --> 
+		<script></script>		<!-- Proximas clases --> 
+    </head>
+    <!-- CUERPO DEL DOCUMENTO --> 
+    <body>
+
+        <div style="position:fixed;top:20px;right:50px">
+            <a href="index.html"><img src="./imagenes/html.png" width="120px" alt='aprendiendo HTML'></a>
+        </div>
+        
+        <div>
+            <ul>
+				<li><a href="index.html">Volver</a></li><br>
+                <li><a href="#HTML">HTML</a>
+                    <ul>
+                        <br>
+                        <li><a href="#CONCEPTOS">Conceptos IMPORTANTES</a></li>
+						<li><a href="#PARAFOS">Parrafos y colores</a></li>
+                        <li><a href="#LISTAS">Listas</a></li>
+                        <li><a href="#LINKS">Links</a></li>
+                        <li><a href="#CARACTERES">Caracteres</a></li>
+                        <li><a href="#TABLAS">Tablas</a></li>
+                        <li><a href="#FORMULARIO">Formlario</a></li>
+                        <li><a href="#MULTIMEDIA">Multimedia</a></li>
+                        <li><a href="#ESTRUCTURA">Estructura</a></li>
+                        <br>
+                    </ul>
+                </li>
+                				
+            </ul>
+        </div>
+
+        <br><br>
+        
+        <h1 id="HTML">HTML</h1> 
+        
+        <p>OBJETIVO: comprender el enmaquetado y la forma en como se trabaja con las etiquetas. HTML significa, en inglés, HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web. HTML se escribe en forma de «etiquetas», rodeadas por corchetes angulares(&lt;,&gt;,/).</p>
+        
+        
+        <p>Conceptos <u>IMPORTANTES</u></p>
+        
+        <ul>
+            <li><b>ELEMENTOS</b>: Consiste en una etiqueta inicial y otra final con su contenido entre dichas etiquetas.</li>
+            <li><b>ATRIBUTOS</b>:: Brindan informacion adicional a los elementos.</li>
+        </ul>
+        
+		<!-- ESTA ETIQUETA NO EXISTE... VER COMO SE INTERPRETA -->
+		<etiqueta atributo="soy un atributo">SOY UNA ETIQUETA</etiqueta>
+
+		<hr>
+        
+		<h2 id="PARRAFOS">Parrafos, Titulos y colores</h2>
+
+<p><font color="blue">DESARROLLO WEB FULL STACK</font>. Fórmate en un programa presencial blended intensivo en espacios reales de tecnología para acelerar tu éxito, <b>certificado</b> por las empresas líderes de la industria.</p>
+
+		<h1>Título 1</h1>
+		<h2>Título 2</h2>
+		<h3>Título 3</h3>
+		<h4>Título 4</h4>
+		<h5>Título 5</h5>
+		<h6>Título 6</h6>
+        
+		<hr>
+
+		<h2 id="LISTAS">LISTAS</h2>
+	
+		<ul>
+		  <li>Item 0</li>
+		  <li>Item 1</li>
+		  <li>Item 2</li>
+		</ul>
+
+		<ul type="i">
+		  <li>Item 0</li>
+		  <li>Item 1</li>
+		  <li>Item 2</li>
+		</ul>
+
+
+		<table border="1"><tbody>
+		<tr>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>type="1"</td>
+			<td>enumerada por defecto</td>
+		</tr>
+		<tr>
+			<td>type="A"</td>
+			<td>enumerada con el abecedario en MAYUSCULA</td>
+		</tr>
+		<tr>
+			<td>type="a"</td>
+			<td>enumerada con el abecedario en MINUSCULA</td>
+		</tr>
+		<tr>
+			<td>type="I"</td>
+			<td>enumeracion romana MAYUSCULA</td>
+		</tr>
+		<tr>
+			<td>type="i"</td>
+			<td>enumeracion romana MINUSCULA</td>
+		</tr>
+		</tbody></table>
+
+		<hr>
+
+		<h2 id="TABLAS">TABLAS</h2>
+
+		<table border="1">
+		  <tr>
+			<th>Titulo 0</th>
+			<th>Titulo 1</th> 
+			<th>Titulo 2</th>
+		  </tr>
+		  <tr>
+			<td>celda 1-0</td>
+			<td>celda 1-1</td> 
+			<td>celda 1-2</td>
+		  </tr>
+		  <tr>
+			<td>celda 2-0</td>
+			<td>celda 2-1</td> 
+			<td>celda 2-2</td>
+		  </tr>
+		</table>
+
+		<hr>
+
+		<h2 id="LINKS">LINKS</h2>
+		<a href="https://www.acamica.com/">LINKS</a>
+
+		<hr>
+
+		<h2 id="CARACTERES">CARACTERES</h2>
+
+		<table BORDER="1">
+		<tbody><tr>
+			<th>Caracter</th>
+			<th>Nombre</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>&#8704;</td>
+			<td>&forall;</td>
+			<td>Para todo</td>
+		</tr>
+		<tr>
+			<td>&#169;</td>
+			<td>&copy;</td>
+			<td>Marca registrada</td>
+		</tr>
+		<tr>
+			<td>&#8364;</td>
+			<td>&euro;</td>
+			<td>Euro</td>
+		</tr>
+		</tbody></table>
+
+		<hr>
+
+		<h2 id="FORMULARIO"><a href="html/formularios.html">FORMULARIOS</a></h2>
+		<form>
+		  Nombre:<br>
+		  <input type="text" value="aca va el nombre">
+		  <br>
+		  Apellido:<br>
+		  <input type="text" value="aca va el apellido">
+		  <br><br>
+			Fecha de nacimiento:<br>
+		  <input type="date">
+		  <br><br>
+		  <input type="submit" value="Enviar">
+		</form> 
+
+		<hr>
+
+
+		<h2 id="MULTIMEDIA">MULTIMEDIA</h2>
+		<!-- SONIDO -->
+		<audio controls>
+		  	<source src="audios/horse.ogg" type="audio/ogg">
+			EL NAVEGADOR NO SOPORTA LA REPRODUCCIÓN.
+		</audio>
+		
+		<br>
+
+		<!-- VIDEO -->
+		<video width="320" height="240" controls>
+		  	<source src="videos/sobrino.mp4" type="video/mp4">
+			EL NAVEGADOR NO SOPORTA LA REPRODUCCIÓN.
+		</video>
+
+		<br><br>
+
+		<!-- MAPA -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3404.901957917973!2d-64.18579614886436!3d-31.416827203326676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1530047326719" width="600" height="450" frameborder="0" 	style="border:0" allowfullscreen></iframe>
+
+		<hr>
+
+		<h2 id="ESTRUCTURA"><a href="layout.html">ESTRUCTURA - layout</a></h2>
+
+		<div>contenedor para agrupar</div>
+
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<img alt="Elementos semánticos HTML5" src="imagenes/layout.gif" width="219" height="258">
+					</td>
+					<td>
+						<ul>
+							<li>&lt;encabezado&gt; - Define un encabezado para un documento o una sección</li>
+							<li>&lt;nav&gt; - Define un contenedor para enlaces de navegación</li>
+						  	<li>&lt;sección&gt; - Define una sección en un documento</li>
+						  	<li>&lt;artículo&gt; - Define un artículo autónomo independiente</li>
+						  	<li>&lt;aside&gt; - Define contenido aparte del contenido (como una barra lateral)</li>
+						  	<li>&lt;footer&gt; - Define un pie de página para un documento o una sección</li>
+						  	<li>&lt;detalles&gt; - Define detalles adicionales</li>
+						  	<li>&lt;summary&gt; - Define un encabezado para el elemento &lt;details&gt;</li>
+						</ul>
+					</td>
+				</tr>
+		</tbody></table>
+
+		<h2 id="INTERES">De interes...</h2>
+
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/HTML">HTML (Wikipedia)</a></li>
+            <li><a href="https://www.w3.org/TR/html5/">Estandar</a></li>
+            <li><a href="https://ascii.cl/es/codigos-html.htm">Codigos/Caracteres HTML</a></li>
+			<li><a href="https://www.w3schools.com/html/html5_new_elements.asp">Más etiquetas</a></li>
+        </ul>
+        
+        <br>
+                
+        <br>
+        
+    </body>
+</html>

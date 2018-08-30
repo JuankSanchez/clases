@@ -1,0 +1,89 @@
+<!-- COMENTARIO HTML (no es interpretado por el navegado) --> 
+<!DOCTYPE html> <!-- INDICA la versi'on del lenguaje de marcado a aplicar --> 
+<html lang="es"> 
+    <head>
+		<!-- Los metadatos HTML son datos sobre el documento HTML (no se muestran, EXCEPTO EL TIULO). --> 
+        <title>TITULO DE LA PAGINA</title>
+        <meta charset="UTF-8"> 	<!-- Codificacion caracteres -->
+		<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		header {
+			background-color: #666;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: white;
+		}
+
+		nav {
+			float: left;
+			width: 30%;
+			height: 300px;
+			background: #ccc;
+			padding: 20px;
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		article {
+			float: left;
+			padding: 20px;
+			width: 70%;
+			background-color: #f1f1f1;
+			height: 300px;
+		}
+
+		section:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		footer {
+			background-color: #777;
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}
+	</style>
+    </head>
+    <!-- CUERPO DEL DOCUMENTO --> 
+    <body>
+                
+		<header>
+		  <h2>ENCABEZADO - layout html</h2>
+		</header>
+
+		<section>
+		  <nav>
+			<ul>
+			  <li><a href="html.html">Volver</a></li>
+			  <li><a href="#">Menu 1</a></li>
+			  <li><a href="#">Menu 2</a></li>
+			  <li><a href="#">Menu 3</a></li>
+			</ul>
+		  </nav>
+		  
+		  <article>
+			<h1>Artículo</h1>
+			<p>Contenido del articulo</p>
+			<p>Mostramos tablas, graficos, etc.</p>
+		  </article>
+		</section>
+
+		<footer>
+		  <p>PIE...</p>
+		</footer>
+        
+    </body>
+</html>

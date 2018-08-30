@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Flotante Y display CSS</title>
+        <meta charset="UTF-8">
+		<style>
+
+			/* DIV FLOTANTE */
+			div#naranja {
+				background-color: orange;
+				float: left;
+			}
+
+
+			div#amarillo {
+				background-color: yellow;
+			}
+
+
+			div#celeste {
+				background-color: #81DAF5/*celeste*/;
+			}			
+
+
+			/* DISEÑO EN LINEAS */
+
+			span.naranja {
+				display: inline; /* DEFECTO */
+				width: 100px;
+				height: 100px;
+				padding: 5px;
+				border: 1px solid blue;    
+				background-color: orange; 
+			}
+
+			span.amarillo {
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				padding: 5px;
+				border: 1px solid blue;        
+				background-color: yellow; 
+			}
+
+			span.celeste {
+				display: block;
+				width: 100px;
+				height: 100px;
+				padding: 5px;
+				border: 1px solid blue;        
+				background-color: #81DAF5/*celeste*/; 
+			}
+
+
+
+
+		</style>
+
+    </head>
+
+    <body>
+
+		<a href="./../css.html">Volver</a>
+		<hr>
+        <div id='naranja'>NARANJA</div>
+        <div id='amarillo'>AMARILLO</div>
+       	<div id='celeste'>CELESTE</div>
+
+		<hr>
+		<h2>display: inline</h2>
+		<div>La academia para los estudiantes que construyen el futuro. Explora carreras innovadoras creadas con gigantes de la industria tecnológica – online y en sedes alrededor del mundo. <span class="naranja">NARANJA</span> <span class="naranja">NARANJA</span> La academia para los estudiantes que construyen el futuro. Explora carreras innovadoras creadas con gigantes de la industria tecnológica – online y en sedes alrededor del mundo.</div>
+
+		<h2>display: inline-block</h2>
+		<div>La academia para los estudiantes que construyen el futuro. Explora carreras innovadoras creadas con gigantes de la industria tecnológica – online y en sedes alrededor del mundo. <span class="amarillo">AMARILLO</span> <span class="amarillo">AMARILLO</span> La academia para los estudiantes que construyen el futuro. Explora carreras innovadoras creadas con gigantes de la industria tecnológica – online y en sedes alrededor del mundo. </div>
+
+		<h2>display: block</h2>
+		<div> La academia para los estudiantes que construyen el futuro. Explora carreras innovadoras creadas con gigantes de la industria tecnológica – online y en sedes alrededor del mundo.. <span class="celeste">CELESTE</span> <span class="celeste">CELESTE</span> La academia para los estudiantes que construyen el futuro. Explora carreras innovadoras creadas con gigantes de la industria tecnológica – online y en sedes alrededor del mundo.. </div>
+
+
+    </body>
+</html>

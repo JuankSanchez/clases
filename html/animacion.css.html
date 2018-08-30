@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>Animación CSS</title>
+        <meta charset="UTF-8">
+		<style>
+            #miContenedor{
+              width: 100%;
+              height: 100%;
+              margin-left: 0; /* Y la unidad??? */
+              margin-bottom:200px;
+            }
+
+            #cuadraditodito {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+                animation-name: cuadraditodito;
+                animation-duration: 4s;
+                animation-iteration-count: 12;
+            }
+
+            /* Safari 4.0 - 8.0 */
+            @-webkit-keyframes cuadraditodito {
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:200px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:red; left:0px; top:0px;}
+            }
+
+            /* Standard syntax */
+            @keyframes cuadraditodito {
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:200px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:red; left:0px; top:0px;}
+            }
+        </style>
+    </head>
+
+    <body>
+
+		<a href="./../css.html">Volver</a>
+
+		<hr>
+
+        <h3 style="font-size:20px;">Animaciones en css</h3>
+
+        <div id="miContenedor">
+            <div id="cuadraditodito"></div>
+        </div>
+
+    </body>
+</html>
